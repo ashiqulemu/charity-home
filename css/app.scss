@@ -127,6 +127,7 @@
     .box{ 
        width: 380px;
        padding: 50px;
+       position: relative;
        display: -webkit-box;
        display: -ms-flexbox;
        display: flex;
@@ -174,10 +175,8 @@
 }
 
 .alert-custom{
-    width: 320px;
-    position: fixed;
-    top: 24px;
-    right: 20px;
-    z-index: 10;
-    
+    width: 100%;
+    position: absolute;
+    top: -95px; 
+    left: 0%;
 }
