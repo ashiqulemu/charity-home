@@ -1,0 +1,87 @@
+ //  variables
+
+ $primary:#42C7EE;
+ $secondary:#3A6188;
+
+ .navbar {
+     background: $primary;
+
+     .navbar-nav {
+         &.custom {
+             .nav-item {
+                 margin: 3px 5px;
+                 .nav-link {
+                     font-size: 16px;
+                     font-weight: 500;
+                     color: #fff;
+                     
+                     &.active{
+                         color: $secondary!important;
+                     }
+                     &:hover{
+                         color: $secondary;
+                     }
+                 }
+             }
+         }
+     }
+ }
+
+
+ .theme-btn { 
+     border-radius: 4px;
+     padding: 8px 14px !important;
+     background: lighten($primary, 10%);
+     &:hover {  
+        background: $secondary;
+     }
+     &.register{
+         background: $secondary;
+     }
+ }
+
+
+ .theme-color{
+     color: $secondary;
+ }
+
+ .introBanner{
+     padding: 90px 0 110 0;
+     background: $secondary;
+     color: #fff;
+ }
+ .feature{
+     img{
+        transform: translatey(-68px);
+     }
+     background-image: linear-gradient(to right, #ff000000, #59caf005), url(../images/tech.png);
+     background-position: 33% 13%;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ .nav-tabs{
+     &.custom{
+         .nav-link{
+             color: $secondary;
+             &.active{
+                background-color: $primary;
+                color: #fff;
+                border-bottom: 2px solid #3eafd7;
+                font-weight: bold;
+            }
+         }
+         
+     }
+ }
+
+ footer{
+     li{
+         a{
+            color: $primary ;
+
+             &:hover{
+                color: #fff !important;
+             }
+         }
+     }
+ }

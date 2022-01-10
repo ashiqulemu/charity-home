@@ -1,0 +1,78 @@
+.navbar {
+  background: #42C7EE;
+}
+
+.navbar .navbar-nav.custom .nav-item {
+  margin: 3px 5px;
+}
+
+.navbar .navbar-nav.custom .nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.navbar .navbar-nav.custom .nav-item .nav-link.active {
+  color: #3A6188 !important;
+}
+
+.navbar .navbar-nav.custom .nav-item .nav-link:hover {
+  color: #3A6188;
+}
+
+.theme-btn {
+  border-radius: 4px;
+  padding: 8px 14px !important;
+  background: #71d5f2;
+}
+
+.theme-btn:hover {
+  background: #3A6188;
+}
+
+.theme-btn.register {
+  background: #3A6188;
+}
+
+.theme-color {
+  color: #3A6188;
+}
+
+.introBanner {
+  padding: 90px 0 110 0;
+  background: #3A6188;
+  color: #fff;
+}
+
+.feature {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff000000), to(#59caf005)), url(../images/tech.png);
+  background-image: linear-gradient(to right, #ff000000, #59caf005), url(../images/tech.png);
+  background-position: 33% 13%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature img {
+  -webkit-transform: translatey(-68px);
+          transform: translatey(-68px);
+}
+
+.nav-tabs.custom .nav-link {
+  color: #3A6188;
+}
+
+.nav-tabs.custom .nav-link.active {
+  background-color: #42C7EE;
+  color: #fff;
+  border-bottom: 2px solid #3eafd7;
+  font-weight: bold;
+}
+
+footer li a {
+  color: #42C7EE;
+}
+
+footer li a:hover {
+  color: #fff !important;
+}
+/*# sourceMappingURL=app.css.map */
