@@ -180,4 +180,12 @@ footer li a:hover {
   background-color: transparent;
   color: #FC5252;
 }
+
+.alert-custom {
+  width: 320px;
+  position: fixed;
+  top: 24px;
+  right: 20px;
+  z-index: 10;
+}
 /*# sourceMappingURL=app.css.map */
