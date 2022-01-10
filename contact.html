@@ -1,155 +1,198 @@
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity </title>
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/app.css">
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/slick.min.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Charity Home</title>
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/app.css">
+        <link rel="stylesheet" href="./css/animate.min.css" />
+    </head>
 
 <body>
-
-    <div class="dashbaord-main">
-        <div class="leftSection wow fadeIn" data-wow-delay=".25s" id='leftSidebar'>
-            <!-- <div class="brand">
-                <img src="images/logo.png" alt="">
-            </div> -->
-            <div class="user-profile">
-                <div class="close-dashboard-sidebar">
-                    <span class="iconify" onclick="foldSidebar();" data-icon="mdi:window-close"></span>
-                </div>
-                <img src="images/company-logo-your-logo.png" alt="">
-            </div>
-            <nav class="sidenav">
-                <ul>
-                    <li class="nav-item active">
-                        <a href="./index.html">
-                            <span class="iconify" data-icon="clarity:dashboard-solid-badged"></span>
-                            Dashboard
-                        </a>
+    <nav class="navbar navbar-expand-lg navbar-light  shadow-sm">
+        <div class="container ">
+            <a class="navbar-brand" href="#">
+                <img src="./images/257-2576928_dummy-logo-png-transparent-png.png" class="img-fluid" width="160px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav custom ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
-                    <li class="nav-item ">
-                        <a href="./transaction.html">
-                            <span class="iconify" data-icon="raphael:history"></span>
-                           view transaction 
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
-                    <li class="nav-item ">
-                        <a href="./donation.html">
-                            <span class="iconify" data-icon="clarity:heart-solid"></span>
-                            Make a Donation
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-                    <li class="nav-item ">
-                        <a href="./standing-orders.html">
-                            <span class="iconify" data-icon="icomoon-free:profile"></span>
-                           Standing Orders
-                        </a>
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link theme-btn text-white " href="login.html">Login</a>
                     </li>
-                    <li class="nav-item ">
-                        <a href="order-voucher-book.html">
-                            <span class="iconify" data-icon="fontisto:wallet"></span>
-                           Order voucher book
-                        </a>
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link theme-btn text-white register" href="register.html">Register</a>
                     </li>
-                    <li class="nav-item ">
-                        <a href="faq.html">
-                            <span class="iconify" data-icon="fluent:note-add-16-filled"></span>
-                           FAQ
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="contact.html">
-                            <span class="iconify" data-icon="fluent:note-add-16-filled"></span>
-                           Contact
-                        </a>
-                    </li>
-                    
-
+                    <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
-            </nav>
+              </li> -->
+            </div>
         </div>
-        <div class="rightSection">
-            <div class="topbar">
-                <div class="fold" onclick='foldSidebar();'>
-                    <span class="iconify" data-icon="eva:menu-fill"></span>
-                </div>
-                <!-- <img src="images/logo.png" class="mobile-menu-logo"> -->
-                <div class="right-element">
-                    <div class="dropdown">
-                        <a href="#" class="btn dropdown-toggle profile-manage" role="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="./images/profile.png">
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <a class="dropdown-item" href="#"><span class="iconify"
-                                    data-icon="carbon:user-avatar"></span> Profile</a>
-                            <a class="dropdown-item" href="#"><span class="iconify"
-                                    data-icon="ion:log-out-outline"></span> Log Out</a>
-                        </ul>
-                    </div>
-                </div>
+    </nav>
+    
+    <section class="introBanner py-5">
+        <div class="col-md-12 ">
+            <div class="col-md-6 px-3 mx-auto text-center f-flex align-items-center justify-content-center flex-column">
+                <h1>Contact us</h1>
+                <p>What is Lorem Ipsum What is Lorem Ipsum What is Lorem Ipsum</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+           <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="wrapper">
+                    <div class="row no-gutters mb-5">
+                        <div class="col-md-12"><br>
+                            <div class="contact-wrap w-100 p-md-5 p-4 my-5 shadow-lg">
+                                <h3 class="mb-4 theme-color">Contact Us</h3>
+                                <div id="form-message-warning" class="mb-4"></div> 
+                          
+                          <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            Your message was sent, thank you!
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                          </div>
+                                <form method="POST" name="contactForm" class="contactForm">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="label" for="name">Full Name</label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6"> 
+                                            <div class="form-group">
+                                                <label class="label" for="email">Email Address</label>
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="label" for="subject">Subject</label>
+                                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="label" for="#">Message</label>
+                                                <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mt-3">
+                                            <div class="form-group">
+                                                <button  class=" btn text-white  btn-dark  "> submit </button>
 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
             </div>
-            <div class="dashboard-content">
-                <section class="profile purchase-status">
-                    <div class="title-section">
-                        <span class="iconify" data-icon="fluent:contact-card-28-regular"></span>
-                        <div class="mx-2">Contact Us </div>
-                    </div>
-                </section>
-                <section class="px-4">
-                    <div class="row my-3">
-                         <div class="col-md-6  my-4 bg-white p-4 shadow-sm rounded">
-                            
-                            <form action="">
-                                <h6 class="mb-2 fw-bold">Sent Message</h6> <hr class="bg-secondary mb-3">
-                               
-                               <div class="col my-3">
-                                  <input type="text" placeholder="Name" class="form-control ">
-                               </div>
-                               <div class="col my-3">
-                                <input type="text" placeholder="subject" class="form-control ">
-                               </div>
-                                <textarea class="form-control" cols="30" rows="5"></textarea>
-                                <button class="btn btn-theme mt-2 text-white">Send</button>
-                            </form>
-                        </div>
-                        <div class="col-md-6  my-4 text-center">
-                           <img class="img-fluid" src="./images/messenger.png" alt="">
-                        </div>
-                       
-                    </div>
-                </section>
-            </div>
+           </div>
         </div>
-    </div>
+    </section>
 
     <!-- footer  -->
 
-    <footer class="py-3 ">
+    <footer class="py-3 mt-4 px-4 bg-dark">
         <div class="container">
-            <div class="d-flex flex-wrap">
-               
-                <div class=" flex-fill bd-highlight ">
-                    <ul class="m-0 text-white">
-                        <li class="list-style-none">+44 (0)xx xxxx 8xxxx</li>
-                        <li class="list-style-none">support@admin.com</li>
-                        <li class="list-style-none"> address goes here </li>
-                    </ul>
+            <div class="col-md-10 mx-auto">
+                <div class="row">
+                    <div class="col-md-4 py-4 text-white">
+                        <h6 class="text-info">Contact & Info</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a class="text-white text-decoration-none" href="tel:+44 (0)20 8731 8988">
+                                    <i class="fa fa-phone"></i>
+                                    +44 (0)11 1111 1111</a>
+                            </li>
+                            <li>
+                                <a class="text-white text-decoration-none" href="mailto:admin@admin.com">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    admin@admin.com</a>
+                            </li>
+                            <li class="  text-decoration-none">
+                                Reg. Charity No. XXXXXX
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 py-4 text-white">
+                        <h6 class="text-info">Address Info</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="  text-decoration-none">
+                                ABC House, ABC Road <br> London, AB XYZ
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-md-4 py-4">
+                        <h6 class="text-light">Regular Links</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-decoration-none">Home</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-decoration-none">About</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-decoration-none">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-decoration-none">Login</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-decoration-none">Register</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-decoration-none">Terms & condition</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-decoration-none">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
                 </div>
-                <div class="p-2 flex-fill bd-highlight">
-                    <img src="images/company-logo-your-logo.png" width="160px">
+            </div>
+            <hr class="my-4" style="background:rgba(255,255,255,0.5)">
+            <div class="space-1">
+                <!-- Copyright -->
+                <div class="text-center">
+                    <p class="mb-0 small text-white">© 2021 All rights reserved.</p>
                 </div>
-                <div class="p-2 d-flex align-items-center footerContact">
-                    <a href=""class="mx-2 text-decoration-none text-white">Help</a>
-                    <a href="" class="mx-2 text-decoration-none text-white">Contact</a>
-                </div>
+                <!-- End Copyright -->
             </div>
         </div>
     </footer>
