@@ -12,7 +12,69 @@
 
     <style>
 
+        .homeBanner {
+            padding: 50px 0;
+            background: linear-gradient(to bottom, #15569c 0%, #00a6e5 100%);
+            position: relative;
+        }
 
+        .homeBanner .intro {
+            color: #FFF;
+            font-size: 34px;
+            font-weight: 600;
+            line-height: 130%;
+        }
+
+        @media (max-width: 768px) {
+
+            .homeBanner .intro {
+                text-align: center;
+                font-size: 22px;
+            }
+
+            .homeBanner .tagline {
+                text-align: center;
+            }
+
+        }
+
+        .homeBanner .arrow {
+            position: absolute;
+            bottom: 36%;
+            right: 28%;
+        }
+
+        @media (min-width: 990px) and (max-width: 1200px) {
+            .homeBanner .arrow {
+                transform: rotateZ(359deg) rotateX(0deg) rotateY(17deg);
+                bottom: 9%;
+                right: 5%;
+            }
+        }
+
+        @media (max-width: 990px) {
+            .homeBanner .arrow {
+                transform: rotateZ(83deg) rotateX(161deg) rotateY(17deg);
+                bottom: 1%;
+                right: 5%;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .homeBanner .arrow {
+                width: 49px;
+            }
+        }
+
+        @media (max-width: 320px) {
+
+            .homeBanner .arrow {
+                transform: rotateZ(83deg) rotateX(161deg) rotateY(14deg);
+                bottom: 7%;
+                right: 4%;
+                width: 49px;
+            }
+        }
     </style>
 
 </head>
@@ -68,7 +130,8 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-12 position-relative">
                         <div class="px-3 pb-5">
-                            <h2 class=" intro mb-0 text-white">You are now completing your <br>
+                            <h2 class=" intro mb-0 text-white">
+                                You are now completing your <br>
                                 donation to Help Taliban <br>
                                 Targets using funds in your <br>
                                 AAC account.
@@ -78,38 +141,43 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 d-flex justify-content-center">
-                        <form action=" " method="post" class="d-flex justify-content-center"> 
-                           <div class="bg-white rounded  p-5">
-                            <div class="title text-muted text-center mb-4 fw-bold">ONE-OFF DONATION</div>
-                            <div class="form-group d-flex justify-content-between">
-                                <label for="account-number " class="text-secondary fw-bold">Your account number:</label>
-                                <span class="float-right text-secondary fw-bold">544</span> 
+                        <form action=" " method="post" class="d-flex justify-content-center">
+                            <div class="bg-white rounded  p-5">
+                                <div class="title text-muted text-center mb-4 fw-bold border-bottom pb-4">
+                                    ONE-OFF DONATION
+                                </div>
+                                <div class="form-group d-flex justify-content-between">
+                                    <label for="account-number " class="text-secondary fw-bold">Your account
+                                        number:</label>
+                                    <span class="float-right text-secondary fw-bold">544</span>
+                                </div>
+
+
+
+                                <div class="form-group text-info d-flex justify-content-between fw-bold my-3">
+                                    <label for="account-number" class="">Total donation amount</label>
+                                    <span class="float-right fw-bold"> 100.00 </span>
+                                </div>
+
+
+                                <div class="form-group mb-4">
+                                    <label for="account-password" class="fw-bold text-secondary mb-2">Enter your
+                                        password:</label>
+                                    <input type="password" class="form-control bg-default py-3"
+                                        placeholder="Account Password">
+                                </div>
+
+                                <small class="text-muted">
+                                    Please allow up to one week for your donation to be processed.
+                                </small>
+
+                                <button type="submit" class="btn btn-info mt-4 d-block w-100 fw-bold py-3 text-white">
+                                    CONFIRM DONATION
+                                </button>
                             </div>
-
-                             
-
-                            <div class="form-group text-info d-flex justify-content-between fw-bold my-3">
-                                <label for="account-number" class="">Total donation amount</label>
-                                <span class="float-right fw-bold">  100.00 </span> 
-                            </div>
-
-
-                            <div class="form-group mb-4">
-                                <label for="account-password" class="fw-bold text-secondary mb-2">Enter your password:</label> 
-                                <input type="password"class="form-control bg-default py-3" placeholder="Account Password" > 
-                            </div>
- 
-                            <small class="text-muted">
-                                Please allow up to one week for your donation to be processed.
-                            </small> 
- 
-                            <button type="submit" class="btn btn-info mt-4 d-block w-100 fw-bold py-3 text-white">
-                                CONFIRM DONATION
-                            </button>
-                           </div>
                         </form>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
