@@ -1,3 +1,70 @@
+.homeBanner {
+  padding: 50px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#15569c), to(#00a6e5));
+  background: linear-gradient(to bottom, #15569c 0%, #00a6e5 100%);
+  position: relative;
+}
+
+.homeBanner .intro {
+  color: #FFF;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+@media (max-width: 768px) {
+  .homeBanner .intro {
+    text-align: center;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeBanner .tagline {
+    text-align: center;
+  }
+}
+
+.homeBanner .arrow {
+  position: absolute;
+  bottom: 36%;
+  right: 28%;
+}
+
+@media (min-width: 990px) and (max-width: 1200px) {
+  .homeBanner .arrow {
+    -webkit-transform: rotateZ(359deg) rotateX(0deg) rotateY(17deg);
+            transform: rotateZ(359deg) rotateX(0deg) rotateY(17deg);
+    bottom: 9%;
+    right: 5%;
+  }
+}
+
+@media (max-width: 990px) {
+  .homeBanner .arrow {
+    -webkit-transform: rotateZ(83deg) rotateX(161deg) rotateY(17deg);
+            transform: rotateZ(83deg) rotateX(161deg) rotateY(17deg);
+    bottom: 1%;
+    right: 5%;
+  }
+}
+
+@media (max-width: 375px) {
+  .homeBanner .arrow {
+    width: 80%;
+  }
+}
+
+@media (max-width: 320px) {
+  .homeBanner .arrow {
+    -webkit-transform: rotateZ(83deg) rotateX(161deg) rotateY(14deg);
+            transform: rotateZ(83deg) rotateX(161deg) rotateY(14deg);
+    bottom: 7%;
+    right: 4%;
+    width: 49px;
+  }
+}
+
 .navbar {
   background: #42C7EE;
 }
